@@ -15,8 +15,8 @@ firstChordNames = \chords {
 
 firstMelody = {
   \partial 8
-  \set TabStaff.minimumFret = #4
   \set TabStaff.restrainOpenStrings = ##t
+  \set TabStaff.minimumFret = #4
   a8_2\4 |
   aes8_1 a_2
   % \bbarre #"V" { c' e' a' }
@@ -71,9 +71,10 @@ thirdChordNames = \chords {
 
 thirdMelody = {
   \set fingeringOrientations = #'(left)
+  \set TabStaff.restrainOpenStrings = ##t
   \set TabStaff.minimumFret = #5
   <e gis d' g'-4>2. <f'-2\2>4 |
-  <a-3 c' e'-1 a'>1 \bar "||"
+  <a,-\thumb a-3 c' e'-1 a'>1 \bar "||"
 }
 
 \score {
