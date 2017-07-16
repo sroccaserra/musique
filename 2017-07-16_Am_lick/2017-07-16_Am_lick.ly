@@ -4,7 +4,7 @@
   title = "Transitions entre La mineur et Mi 7"
 }
 
-\include "barred.ily"
+% \include "barred.ily"
 
 firstChordNames = \chords {
     \partial 8
@@ -14,17 +14,29 @@ firstChordNames = \chords {
 }
 
 firstMelody = {
-  \clef "treble_8"
   \partial 8
+  \set TabStaff.minimumFret = #4
+  \set TabStaff.restrainOpenStrings = ##t
   a8_2\4 |
-  aes8_1 a_2 \bbarre #"V" { c' e' a' } c'' b' a' |
+  aes8_1 a_2
+  % \bbarre #"V" { c' e' a' }
+  \textSpannerDown
+  \override TextSpanner.bound-details.left.text = #"V "
+  c'\startTextSpan e' a'\stopTextSpan
+  c'' b' a' |
   gis'1 \bar "||"
 }
 
 \score {
   <<
     \firstChordNames
-    \firstMelody
+    \new Staff {
+      \clef "treble_8"
+      \firstMelody
+    }
+    \new TabStaff {
+      \firstMelody
+    }
   >>
 }
 
@@ -34,7 +46,7 @@ secondChordNames = \chords {
 }
 
 secondMelody = {
-  \clef "treble_8"
+  \set TabStaff.minimumFret = #4
   r4 b8_1\3 d' e'\2 gis'\1 b' c'\3 |
   a'1\1 \bar "||"
 }
@@ -42,7 +54,13 @@ secondMelody = {
 \score {
   <<
     \secondChordNames
-    \secondMelody
+    \new Staff {
+      \clef "treble_8"
+      \secondMelody
+    }
+    \new TabStaff {
+      \secondMelody
+    }
   >>
 }
 
@@ -52,8 +70,8 @@ thirdChordNames = \chords {
 }
 
 thirdMelody = {
-  \clef "treble_8"
   \set fingeringOrientations = #'(left)
+  \set TabStaff.minimumFret = #5
   <e gis d' g'-4>2. <f'-2\2>4 |
   <a-3 c' e'-1 a'>1 \bar "||"
 }
@@ -61,6 +79,12 @@ thirdMelody = {
 \score {
   <<
     \thirdChordNames
-    \thirdMelody
+    \new Staff {
+      \clef "treble_8"
+      \thirdMelody
+    }
+    \new TabStaff {
+      \thirdMelody
+    }
   >>
 }
