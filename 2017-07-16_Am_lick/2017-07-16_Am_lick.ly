@@ -14,11 +14,11 @@ firstChordNames = \chords {
 }
 
 firstMelody = {
-  \clef "treble"
+  \clef "treble_8"
   \partial 8
-  a'8_2\4 |
-  aes'8_1 a'_2 \bbarre #"V" { c'' e'' a'' } c''' b'' a'' |
-  gis''1 \bar "||"
+  a8_2\4 |
+  aes8_1 a_2 \bbarre #"V" { c' e' a' } c'' b' a' |
+  gis'1 \bar "||"
 }
 
 \score {
@@ -34,8 +34,9 @@ secondChordNames = \chords {
 }
 
 secondMelody = {
-  r4 b'8_1\3 d'' e''\2 gis''\1 b'' c''\3 |
-  a''1\1 \bar "||"
+  \clef "treble_8"
+  r4 b8_1\3 d' e'\2 gis'\1 b' c'\3 |
+  a'1\1 \bar "||"
 }
 
 \score {
@@ -51,10 +52,10 @@ thirdChordNames = \chords {
 }
 
 thirdMelody = {
-  \clef "treble"
+  \clef "treble_8"
   \set fingeringOrientations = #'(left)
-  <e' gis' d'' g''-4>2. <f''-2\2>4 |
-  <a'-3 c'' e''-1 a''>1 \bar "||"
+  <e gis d' g'-4>2. <f'-2\2>4 |
+  <a-3 c' e'-1 a'>1 \bar "||"
 }
 
 \score {
