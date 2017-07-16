@@ -1,17 +1,27 @@
 \version "2.18.2"
-<<
-\chords {
+
+\header {
+  title = "Transition La mineur vers Mi 7"
+}
+
+chordNames = \chords {
     \partial 8
     r8 |
     a1:m |
     e1:7
 }
-{
+
+melody = {
   \clef "treble"
   \partial 8
-  \set fingeringOrientations = #'(down)
-  <a'-2\4>8 |
-  <aes'-1>8 <a'-2> c'' e'' a'' c''' b'' a'' |
-  gis'' r8 r4 r2 |
+  a'8_2\4 |
+  aes'8_1 a'_2 c'' e'' a'' c''' b'' a'' |
+  gis'' r8 r4 r2 \bar "||"
 }
->>
+
+\score {
+  <<
+    \chordNames
+    \melody
+  >>
+}
