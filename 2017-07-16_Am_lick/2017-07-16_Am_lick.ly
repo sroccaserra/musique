@@ -34,8 +34,8 @@ secondChordNames = \chords {
 }
 
 secondMelody = {
-  r4 b'8_1\3 d'' e'' gis'' b'' c'' |
-  a''1 \bar "||"
+  r4 b'8_1\3 d'' e''\2 gis''\1 b'' c''\3 |
+  a''1\1 \bar "||"
 }
 
 \score {
