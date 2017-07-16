@@ -50,9 +50,11 @@ thirdChordNames = \chords {
   a1:m
 }
 
-thirdMelody = \absolute {
-  <e' gis' d'' g''>2. f''4 |
-  <a' c'' e'' a''>1 \bar "||"
+thirdMelody = {
+  \clef "treble"
+  \set fingeringOrientations = #'(left)
+  <e' gis' d'' g''-4>2. <f''-2\2>4 |
+  <a'-3 c'' e''-1 a''>1 \bar "||"
 }
 
 \score {
