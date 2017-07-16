@@ -6,7 +6,7 @@
 
 chordNames = \chords {
     \partial 8
-    r8 |
+    s8 |
     a1:m |
     e1:7
 }
