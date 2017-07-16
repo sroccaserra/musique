@@ -21,6 +21,13 @@ firstMelody = {
   gis''1 \bar "||"
 }
 
+\score {
+  <<
+    \firstChordNames
+    \firstMelody
+  >>
+}
+
 secondChordNames = \chords {
   e1:7 |
   a1:m
@@ -33,14 +40,24 @@ secondMelody = {
 
 \score {
   <<
-    \firstChordNames
-    \firstMelody
+    \secondChordNames
+    \secondMelody
   >>
+}
+
+thirdChordNames = \chords {
+  e1:9+ |
+  a1:m
+}
+
+thirdMelody = \absolute {
+  <e' gis' d'' g''>2. f''4 |
+  <a' c'' e'' a''>1 \bar "||"
 }
 
 \score {
   <<
-    \secondChordNames
-    \secondMelody
+    \thirdChordNames
+    \thirdMelody
   >>
 }
