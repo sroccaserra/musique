@@ -73,7 +73,7 @@ thirdMelody = {
   \set fingeringOrientations = #'(left)
   \set TabStaff.restrainOpenStrings = ##t
   \set TabStaff.minimumFret = #5
-  <e gis d' g'-4>2. <f'-2\2>4 |
+  <e gis d' g'-4>2. <f'-1\2>4 |
   <a,-\thumb a-3 c' e'-1 a'>1 \bar "||"
 }
 
