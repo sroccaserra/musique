@@ -69,105 +69,119 @@ chromatic = \absolute {
 
   \score {
     <<
-    \chords {
-      g1
-    }
-    \new Staff {
-      \clef "treble_8"
-      \majorArpeggio
-    }
-    \new TabStaff {
-      \majorArpeggio
-    }
+      \chords {
+        g1
+      }
+      \new Staff {
+        \clef "treble_8"
+        \key g \major
+        g4 b d' g' |
+        \bar "||"
+      }
     >>
   }
 
   \score {
     <<
-    \chords {
-      g1
-    }
-    \new Staff {
-      \clef "treble_8"
-      \appoggiaturesUp
-    }
-    \new TabStaff {
-      \appoggiaturesUp
-    }
+      \chords {
+        g1
+      }
+      \new Staff {
+        \clef "treble_8"
+        \majorArpeggio
+      }
+      \new TabStaff {
+        \majorArpeggio
+      }
     >>
   }
 
   \score {
     <<
-    \chords {
-      g1
-    }
-    \new Staff {
-      \clef "treble_8"
-      \appoggiaturesDown
-    }
-    \new TabStaff {
-      \appoggiaturesDown
-    }
+      \chords {
+        g1
+      }
+      \new Staff {
+        \clef "treble_8"
+        \appoggiaturesUp
+      }
+      \new TabStaff {
+        \appoggiaturesUp
+      }
     >>
   }
 
   \score {
     <<
-    \chords {
-      g1
-    }
-    \new Staff {
-      \clef "treble_8"
-      \enclosure
-    }
-    \new TabStaff {
-      \enclosure
-    }
+      \chords {
+        g1
+      }
+      \new Staff {
+        \clef "treble_8"
+        \appoggiaturesDown
+      }
+      \new TabStaff {
+        \appoggiaturesDown
+      }
     >>
   }
 
   \score {
     <<
-    \chords {
-      g1
-    }
-    \new Staff {
-      \clef "treble_8"
-      \pentatonic
-    }
-    \new TabStaff {
-      \pentatonic
-    }
+      \chords {
+        g1
+      }
+      \new Staff {
+        \clef "treble_8"
+        \enclosure
+      }
+      \new TabStaff {
+        \enclosure
+      }
     >>
   }
 
   \score {
     <<
-    \chords {
-      g1
-    }
-    \new Staff {
-      \clef "treble_8"
-      \chromatic
-    }
-    \new TabStaff {
-      \chromatic
-    }
+      \chords {
+        g1
+      }
+      \new Staff {
+        \clef "treble_8"
+        \pentatonic
+      }
+      \new TabStaff {
+        \pentatonic
+      }
+    >>
+  }
+
+  \score {
+    <<
+      \chords {
+        g1
+      }
+      \new Staff {
+        \clef "treble_8"
+        \chromatic
+      }
+      \new TabStaff {
+        \chromatic
+      }
     >>
   }
 }
 
 minorArpeggio = \absolute {
-    \key a \minor
-    \set TabStaff.restrainOpenStrings = ##t
-    \set TabStaff.minimumFret = #5
-    a,8_1\6 c_2 e_1 a_1
-    \set TabStaff.minimumFret = #8
-    c'_2 e'_1 a'_2 c''_1 |
-    e''1_4 |
-    \bar "||"
-  }
+  \key a \minor
+  \set TabStaff.restrainOpenStrings = ##t
+  \set TabStaff.minimumFret = #5
+  a,8_1\6 c_2 e_1 a_1
+  \set TabStaff.minimumFret = #8
+  c'_2 e'_1 a'_2 c''_1 |
+  e''1_4 |
+  \bar "||"
+}
 
 diminished = \absolute {
   \key a \minor
@@ -189,31 +203,31 @@ diminished = \absolute {
 
   \score {
     <<
-    \chords {
-      a1:m
-    }
-    \new Staff {
-      \clef "treble_8"
-      \minorArpeggio
-    }
-    \new TabStaff {
-      \minorArpeggio
-    }
+      \chords {
+        a1:m
+      }
+      \new Staff {
+        \clef "treble_8"
+        \minorArpeggio
+      }
+      \new TabStaff {
+        \minorArpeggio
+      }
     >>
   }
 
   \score {
     <<
-    \chords {
-      e1:7
-    }
-    \new Staff {
-      \clef "treble_8"
-      \diminished
-    }
-    \new TabStaff {
-      \diminished
-    }
+      \chords {
+        e1:7
+      }
+      \new Staff {
+        \clef "treble_8"
+        \diminished
+      }
+      \new TabStaff {
+        \diminished
+      }
     >>
   }
 }
